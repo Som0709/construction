@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--ABout US-->
+    <section id="about" class="padding-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 about_box">
+                    <div class="row">
+                        <img src="images/detail1.jpg" alt="About Us" class="img-responsive detail">
+                        <div class="effect text-center">
+                            <img src="images/detail-icon1.png" alt="renovation">
+                            <h3>House Renovation</h3>
+                            <p class="margin10">We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 about_box active">
+                    <div class="row">
+                        <img src="images/detail2.jpg" alt="About Us" class="img-responsive detail">
+                        <div class="effect  text-center">
+                            cls
+                            <img src="images/detail-icon2.png" alt="renovation">
+                            <h3>House Renovation</h3>
+                            <p class="margin10">We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 about_box">
+                    <div class="row">
+                        <img src="images/detail3.jpg" alt="About Us" class="img-responsive detail">
+                        <div class="effect  text-center">
+                            <img src="images/detail-icon3.png" alt="renovation">
+                            <h3>House Renovation</h3>
+                            <p class="margin10">We offer the most complete house renovating services in the country, from kitchen design to bathroom remodeling.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        /* ----- ABout US ----- */
+        
+        section#about {
+            position: relative;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+        
+        #about {}
+        
+        #about .about_box {
+            color: #fff;
+            overflow: hidden;
+            position: relative;
+            top: -100px;
+            z-index: 100;
+            cursor: pointer;
+        }
+        
+        .about_box:before {
+            background: rgba(255, 255, 255, 0.2);
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0px, -100%, 0px);
+            -moz-transition: transform 0.7s ease 0.1s;
+            -ms-transition: transform 0.7s ease 0.1s;
+            -o-transition: transform 0.7s ease 0.1s;
+            -webkit-transition: transform 0.7s ease 0.1s;
+            transition: transform 0.7s ease 0.1s;
+            width: 100%;
+            z-index: 101;
+        }
+        
+        .about_box:hover::before {
+            transform: scale3d(1.9, 1.4, 1) rotate3d(0, 0, 1, 45deg) translate3d(0px, 100%, 0px);
+        }
+        
+        .about_box.active {
+            -moz-transform: translateY(-50px);
+            -ms-transform: translateY(-50px);
+            -o-transform: translateY(-50px);
+            -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+        }
+        
+        .about_box:hover img {
+            transform: scale(1.1);
+        }
+        
+        #about .about_box img.detail {
+            position: relative;
+            width: 100%;
+        }
+        
+        #about .about_box .effect {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            padding: 15px;
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        
+        #about .about_box .effect>img {
+            max-width: 100px;
+            margin-bottom: 15px;
+        }
+        
+        #about .priorty .about-post,
+        .contact_address .address {
+            margin-top: 15px;
+            overflow: hidden;
+        }
+        
+        #about .priorty .about-post a,
+        .contact_address .address .icon {
+            background: #eaeaea;
+            display: inline-block;
+            float: left;
+            height: 60px;
+            width: 64px;
+            text-align: center;
+            font-size: 35px;
+        }
+        
+        #about .priorty .about-post a>img {
+            display: inline-block;
+        }
+        
+        #about .priorty .about-post h4,
+        #about .priorty .about-post p {
+            color: #0f0f0f;
+        }
+        
+        #about .priorty .about-post h4,
+        .contact_address .address h4 {
+            margin: 10px 0 0 80px;
+        }
+        
+        #about .priorty .about-post p,
+        .contact_address .address p {
+            display: block;
+            margin: 0 0 0 80px;
+        }
+    </style>
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
